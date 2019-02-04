@@ -69,7 +69,7 @@ h3 Total performance score #{(gpsiSummary.lighthouseResult.categories.performanc
         th Score
         th Recommendation
     tbody
-    each audit in gpsiSummary.lighthouseResults.audits
+    each audit in gpsiSummary.lighthouseResult.audits
       tr
         td(data-title='Name') #{audit.title}
         if audit.description
