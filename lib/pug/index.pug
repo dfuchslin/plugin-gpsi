@@ -7,75 +7,75 @@ mixin sizeCell(title, size)
 a
 h2 Google Page Speed Insights
 
-console.log(JSON.stringify(pageInfo.data))
-
 - var gpsiSummary = pageInfo.data.gpsi.pageSummary
+
+p #{JSON.stringify(pageInfo.data)}
 
 //- This is how you can see all the content sent from GPSI
 //- p #{JSON.stringify(pageInfo.data.gpsi.pageSummary)}
 
-h3 Page metrics
-.row
-  .one-half.column
-    table
-      thead
-        tr
-          th(colspan='2') Resources
-        tr
-          td Total Requests
-          +numberCell('', gpsiSummary.pageStats.numberResources)
-        tr
-          td Static Requests
-          +numberCell('', gpsiSummary.pageStats.numberStaticResources || 0)
-        tr
-          td CSS Requests
-          +numberCell('', gpsiSummary.pageStats.numberCssResources || 0)
-        tr
-          td JavaScript Requests
-          +numberCell('', gpsiSummary.pageStats.numberJsResources || 0 )
-        tr
-          td Hosts
-          +numberCell('', gpsiSummary.pageStats.numberHosts || 0)
-  .one-half.column
-    table
-      thead
-        tr
-          th(colspan='2') Sizes
-        tr
-          td Total request size
-          +sizeCell('', gpsiSummary.pageStats.totalRequestBytes)
-        tr
-          td HTML size
-          +sizeCell('', gpsiSummary.pageStats.htmlResponseBytes)
-        tr
-          td Images size
-          +sizeCell('', gpsiSummary.pageStats.imageResponseBytes)
-        tr
-          td CSS size
-          +sizeCell('', gpsiSummary.pageStats.cssResponseBytes)
-        tr
-          td JavaScript size
-          +sizeCell('', gpsiSummary.pageStats.javascriptResponseBytes)
-        tr
-          td Others size
-          +sizeCell('', gpsiSummary.pageStats.otherResponseBytes)
+//- h3 Page metrics
+//- .row
+//-   .one-half.column
+//-     table
+//-       thead
+//-         tr
+//-           th(colspan='2') Resources
+//-         tr
+//-           td Total Requests
+//-           +numberCell('', gpsiSummary.pageStats.numberResources)
+//-         tr
+//-           td Static Requests
+//-           +numberCell('', gpsiSummary.pageStats.numberStaticResources || 0)
+//-         tr
+//-           td CSS Requests
+//-           +numberCell('', gpsiSummary.pageStats.numberCssResources || 0)
+//-         tr
+//-           td JavaScript Requests
+//-           +numberCell('', gpsiSummary.pageStats.numberJsResources || 0 )
+//-         tr
+//-           td Hosts
+//-           +numberCell('', gpsiSummary.pageStats.numberHosts || 0)
+//-   .one-half.column
+//-     table
+//-       thead
+//-         tr
+//-           th(colspan='2') Sizes
+//-         tr
+//-           td Total request size
+//-           +sizeCell('', gpsiSummary.pageStats.totalRequestBytes)
+//-         tr
+//-           td HTML size
+//-           +sizeCell('', gpsiSummary.pageStats.htmlResponseBytes)
+//-         tr
+//-           td Images size
+//-           +sizeCell('', gpsiSummary.pageStats.imageResponseBytes)
+//-         tr
+//-           td CSS size
+//-           +sizeCell('', gpsiSummary.pageStats.cssResponseBytes)
+//-         tr
+//-           td JavaScript size
+//-           +sizeCell('', gpsiSummary.pageStats.javascriptResponseBytes)
+//-         tr
+//-           td Others size
+//-           +sizeCell('', gpsiSummary.pageStats.otherResponseBytes)
 
-h3 Total performance score #{gpsiSummary.ruleGroups.SPEED.score}
+//- h3 Total performance score #{gpsiSummary.ruleGroups.SPEED.score}
 
-.responsive
-  table
-    thead
-      tr
-        th Rule name
-        th Summary
-        th Impact
-    tbody
-    each rule, name in gpsiSummary.formattedResults.ruleResults
-      if (rule.ruleImpact > 0)
-        tr
-          td(data-title='Name') #{rule.localizedRuleName}
-          if rule.summary
-            td.url(data-title='Summary') #{rule.summary.format}
-          else
-            td.url(data-title='Summary') No summary.
-          td(data-title='Impact')  #{rule.ruleImpact}
+//- .responsive
+//-   table
+//-     thead
+//-       tr
+//-         th Rule name
+//-         th Summary
+//-         th Impact
+//-     tbody
+//-     each rule, name in gpsiSummary.formattedResults.ruleResults
+//-       if (rule.ruleImpact > 0)
+//-         tr
+//-           td(data-title='Name') #{rule.localizedRuleName}
+//-           if rule.summary
+//-             td.url(data-title='Summary') #{rule.summary.format}
+//-           else
+//-             td.url(data-title='Summary') No summary.
+//-           td(data-title='Impact')  #{rule.ruleImpact}
