@@ -58,7 +58,7 @@ h2 Google Page Speed Insights
 //-           td Others size
 //-           +sizeCell('', gpsiSummary.pageStats.otherResponseBytes)
 
-h3 Total performance score #{(gpsiSummary.lighthouseResult.categories.performance.score || 0) * 100}
+h3 Total performance score #{gpsiSummary.score}
 
 .responsive
   table
