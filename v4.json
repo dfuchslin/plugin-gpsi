@@ -1,0 +1,731 @@
+{
+  "pageSummary": {
+    "captchaResult": "CAPTCHA_NOT_NEEDED",
+    "kind": "pagespeedonline#result",
+    "id": "https://www.sas.se/",
+    "responseCode": 200,
+    "title": "Billiga flygbiljetter och flygresor – sök och boka flyg | SAS",
+    "ruleGroups": {
+      "SPEED": {
+        "score": 76
+      }
+    },
+    "loadingExperience": {
+      "id": "https://www.sas.se/",
+      "metrics": {
+        "DOM_CONTENT_LOADED_EVENT_FIRED_MS": {
+          "median": 927,
+          "distributions": [
+            {
+              "min": 0,
+              "max": 1940,
+              "proportion": 0.8524783345199226
+            },
+            {
+              "min": 1940,
+              "max": 3874,
+              "proportion": 0.1222510495175902
+            },
+            {
+              "min": 3874,
+              "proportion": 0.025270615962487412
+            }
+          ],
+          "category": "FAST"
+        },
+        "FIRST_CONTENTFUL_PAINT_MS": {
+          "median": 946,
+          "distributions": [
+            {
+              "min": 0,
+              "max": 1459,
+              "proportion": 0.717993380579753
+            },
+            {
+              "min": 1459,
+              "max": 2736,
+              "proportion": 0.2227290959200748
+            },
+            {
+              "min": 2736,
+              "proportion": 0.05927752350017225
+            }
+          ],
+          "category": "FAST"
+        }
+      },
+      "overall_category": "FAST",
+      "initial_url": "https://www.sas.se/"
+    },
+    "pageStats": {
+      "numberResources": 72,
+      "numberHosts": 21,
+      "totalRequestBytes": "14584",
+      "numberStaticResources": 37,
+      "htmlResponseBytes": "156922",
+      "overTheWireResponseBytes": "1659030",
+      "cssResponseBytes": "51873",
+      "imageResponseBytes": "1363161",
+      "javascriptResponseBytes": "3521156",
+      "otherResponseBytes": "89666",
+      "numberJsResources": 29,
+      "numberCssResources": 4,
+      "numTotalRoundTrips": 29,
+      "numRenderBlockingRoundTrips": 8
+    },
+    "formattedResults": {
+      "locale": "en_US",
+      "ruleResults": {
+        "AvoidLandingPageRedirects": {
+          "localizedRuleName": "Avoid landing page redirects",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+              }
+            ]
+          }
+        },
+        "EnableGzipCompression": {
+          "localizedRuleName": "Enable compression",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+              }
+            ]
+          }
+        },
+        "LeverageBrowserCaching": {
+          "localizedRuleName": "Leverage browser caching",
+          "ruleImpact": 1,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Setting an expiry date or a maximum age in the HTTP headers for static resources instructs the browser to load previously downloaded resources from local disk rather than over the network."
+          },
+          "urlBlocks": [
+            {
+              "header": {
+                "format": "{{BEGIN_LINK}}Leverage browser caching{{END_LINK}} for the following cacheable resources:",
+                "args": [
+                  {
+                    "type": "HYPERLINK",
+                    "key": "LINK",
+                    "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+                  }
+                ]
+              },
+              "urls": [
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://de-content-search-widget.sasdigital.io/assets/css/content-search.css"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "30 seconds"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://de-content-search-widget.sasdigital.io/assets/js/content-search/build.min.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "30 seconds"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://de-content-search-widget.sasdigital.io/assets/static/images/sprite.svg"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "30 seconds"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://static.hotjar.com/c/hotjar-908076.js?sv=5"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 seconds"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.google-analytics.com/gtm/js?id=GTM-N4GLXGX&amp;l=sasD360DataLayer&amp;t=gtm18&amp;cid=215009657.1549275738"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "15 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.googletagmanager.com/gtm.js?id=GTM-PRPCD8&amp;l=sasD360DataLayer"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "15 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://assets.adobedtm.com/9a8fd72cf59ebb197816dc22e416b0ca665327db/mbox-contents-c9b94a39f1a7cd6408483baab074d2f46f9c9078.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://assets.adobedtm.com/9a8fd72cf59ebb197816dc22e416b0ca665327db/s-code-contents-b2663f0eb7e645dbd0040db43d75d1638eea6347.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://assets.adobedtm.com/9a8fd72cf59ebb197816dc22e416b0ca665327db/satelliteLib-cd6922349a61304f8ffaa9963837b469461f48ee.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.google-analytics.com/plugins/ua/ec.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/appdata/cep/RD_Cepdata_se.json"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/appdata/marketselector/countryinfo.json"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/libs/cq/i18n/dict.sv.json"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/translations/customer-lib/customer_sv.json"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/translations/sasui-homepage/homepage_sv.json"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "60 minutes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.google-analytics.com/analytics.js"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "2 hours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/etc/clientlibs/flysas/global-IA/images/sprite.svg"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "24 hours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/etc/clientlibs/flysas/global/images/banner-icon.svg"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "24 hours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/home//images/sprite.svg"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "24 hours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}} ({{LIFETIME}})",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/home/images/sprite.svg"
+                      },
+                      {
+                        "type": "DURATION",
+                        "key": "LIFETIME",
+                        "value": "24 hours"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "MainResourceServerResponseTime": {
+          "localizedRuleName": "Reduce server response time",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your server responded quickly. Learn more about {{BEGIN_LINK}}server response time optimization{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/Server"
+              }
+            ]
+          }
+        },
+        "MinifyCss": {
+          "localizedRuleName": "Minify CSS",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+              }
+            ]
+          }
+        },
+        "MinifyHTML": {
+          "localizedRuleName": "Minify HTML",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your HTML is minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+              }
+            ]
+          }
+        },
+        "MinifyJavaScript": {
+          "localizedRuleName": "Minify JavaScript",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your JavaScript content is minified. Learn more about {{BEGIN_LINK}}minifying JavaScript{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+              }
+            ]
+          }
+        },
+        "MinimizeRenderBlockingResources": {
+          "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+          "ruleImpact": 21,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your page has {{NUM_SCRIPTS}} blocking script resources and {{NUM_CSS}} blocking CSS resources. This causes a delay in rendering your page.",
+            "args": [
+              {
+                "type": "INT_LITERAL",
+                "key": "NUM_SCRIPTS",
+                "value": "4"
+              },
+              {
+                "type": "INT_LITERAL",
+                "key": "NUM_CSS",
+                "value": "2"
+              }
+            ]
+          },
+          "urlBlocks": [
+            {
+              "header": {
+                "format": "None of the above-the-fold content on your page could be rendered without waiting for the following resources to load. Try to defer or asynchronously load blocking resources, or inline the critical portions of those resources directly in the HTML."
+              }
+            },
+            {
+              "header": {
+                "format": "{{BEGIN_LINK}}Remove render-blocking JavaScript{{END_LINK}}:",
+                "args": [
+                  {
+                    "type": "HYPERLINK",
+                    "key": "LINK",
+                    "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
+                  }
+                ]
+              },
+              "urls": [
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://assets.adobedtm.com/9a8fd72cf59ebb197816dc22e416b0ca665327db/satelliteLib-cd6922349a61304f8ffaa9963837b469461f48ee.js"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://assets.adobedtm.com/9a8fd72cf59ebb197816dc22e416b0ca665327db/mbox-contents-c9b94a39f1a7cd6408483baab074d2f46f9c9078.js"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/etc/clientlibs/flysas/cookie-notification.aa7afdb9c9a5f5536667e80c80ae9031.js"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/home/bundle-123f5a0aaab1fe873903.js"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "format": "{{BEGIN_LINK}}Optimize CSS Delivery{{END_LINK}} of the following:",
+                "args": [
+                  {
+                    "type": "HYPERLINK",
+                    "key": "LINK",
+                    "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
+                  }
+                ]
+              },
+              "urls": [
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/etc/clientlibs/flysas/cookie-notification.518e0e07fae05c31b2410ae05cf3feb1.css"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "result": {
+                    "format": "{{URL}}",
+                    "args": [
+                      {
+                        "type": "URL",
+                        "key": "URL",
+                        "value": "https://www.sas.se/etc/clientlibs/flysas/top-banner.1163df02e485ead05fcbf791a0415d1c.css"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "OptimizeImages": {
+          "localizedRuleName": "Optimize images",
+          "ruleImpact": 0,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your images are optimized. Learn more about {{BEGIN_LINK}}optimizing images{{END_LINK}}.",
+            "args": [
+              {
+                "type": "HYPERLINK",
+                "key": "LINK",
+                "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+              }
+            ]
+          }
+        },
+        "PrioritizeVisibleContent": {
+          "localizedRuleName": "Prioritize visible content",
+          "ruleImpact": 3,
+          "groups": [
+            "SPEED"
+          ],
+          "summary": {
+            "format": "Your page requires additional network round trips to render the above-the-fold content. For best performance, reduce the amount of HTML needed to render above-the-fold content."
+          },
+          "urlBlocks": [
+            {
+              "header": {
+                "format": "The entire HTML response was not sufficient to render the above-the-fold content. This usually indicates that additional resources, loaded after HTML parsing, were required to render above-the-fold content. {{BEGIN_LINK}}Prioritize visible content{{END_LINK}} that is needed for rendering above-the-fold by including it directly in the HTML response.",
+                "args": [
+                  {
+                    "type": "HYPERLINK",
+                    "key": "LINK",
+                    "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+                  }
+                ]
+              },
+              "urls": [
+                {
+                  "result": {
+                    "format": "None of the final above-the-fold content could be rendered even with the full HTML response."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "version": {
+      "major": 1,
+      "minor": 15
+    }
+  }
+}
